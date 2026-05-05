@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HMTL</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho da janela do navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir um áudio em HTML5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/testeaudio.mp3" type="audio/mpeg">
+        <source src="midia/testeaudio.ogg" type="audio/ogg">
+        <source src="midia/testeaudio.wav" type="audio/wav"> -- O formato WAV é o mais pesado, mas tem a melhor qualidade. O formato OGG é o mais leve, mas tem a pior qualidade. O formato MP3 é um meio termo entre os dois. --
+        <p>Infelizmente seu navegador não consegue reproduzir este áudio. <a href="midia/testeaudio.mp3" download="testeaudio.mp3" type="audio/mpeg">Clique aqui para baixar o áudio.</a> </p>
+    </audio>
+
+</body>
+</html>

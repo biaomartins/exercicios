@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse video está hospedado no meu próprio servidor</p>
+
+    <video width="500" poster="imagem/paisagem.png" controls autoplay loop>
+        <source src="video/videoteste.mp4.mp4" type="video/mp4">
+        <source src="video/Videoteste.webm.webm" type="video/webm">
+        <!--Quanto mais fontes de vídeo, melhor, pois aumenta a compatibilidade com os navegadores.-->
+        <p>Seu navegador não suporta a reprodução deste vídeo.</p>
+    </video>
+   <!--Essa forma de inserir vídeos é a mais comum, onde o vídeo é hospedado localmente no servidor. Porém é a forma mais pesada em termos de tráfego de dados-->
+   
+    <h1>Inserindo videos do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oMQL9PXp7fQ?si=uBpZfBqLap5LVCfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Essa forma de inserir vídeos é a mais comum, onde o vídeo é hospedado no YouTube. É a forma mais leve em termos de tráfego de dados, mas depende da conexão com a internet.-->
+
+</body>
+</html>
